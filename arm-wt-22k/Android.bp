@@ -108,11 +108,11 @@ cc_library {
             ],
 
             // .s files not ported for Clang assembler yet.
-            clang_asflags: ["-no-integrated-as"],
+            clang_asflags: ["-no-integrated-as", "-mcpu=cortex-a53"],
         },
         arm64: {
             // .s files not ported for Clang assembler yet.
-            clang_asflags: ["-no-integrated-as"],
+            clang_asflags: ["-no-integrated-as", "-mcpu=cortex-a53"],
         },
     },
 }
